@@ -1,4 +1,4 @@
-# springboot-rabbitMq (진행중)
+# springboot-rabbitMq-sender(진행중)
 
 목적 : 
 1. springBoot에 RabbitMq 적용
