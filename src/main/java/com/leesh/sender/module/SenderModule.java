@@ -33,10 +33,10 @@ public class SenderModule {
         LocalDateTime nowDateTime = LocalDateTime.now();
         String time = nowDateTime.toString();
 
-        DeptDto deptDto = new DeptDto(10,"testName","testLoc",time);
+        DeptDto deptDto = new DeptDto(1,"Name","testLoc",time);
 
-        System.out.println("==> [전송]sender deptDto : "+deptDto.toString());
+        System.out.println("==> 1.[발신]sender deptDto : "+deptDto.toString());
         //mq로 메세지 전송.
-        rabbitTemplate.convertAndSend("deptDto","deptDto-first", deptDto);
+        rabbitTemplate.convertAndSend("deptDto","deptDto-1", deptDto);
     }
 }
