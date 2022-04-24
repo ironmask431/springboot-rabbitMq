@@ -20,7 +20,7 @@ public class SenderModule {
         LocalDateTime nowDateTime = LocalDateTime.now();
         String time = nowDateTime.toString();
 
-        System.out.println("mq로 time 전송 : "+time);
+        System.out.println("==> [전송]sender time : "+time);
         //mq로 메세지 전송.
         rabbitTemplate.convertAndSend("time","time-first",time);
     }
