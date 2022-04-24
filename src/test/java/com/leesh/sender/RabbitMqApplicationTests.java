@@ -1,4 +1,4 @@
-package com.leesh.rabbitMq;
+package com.leesh.sender;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.leesh.rabbitMq;
+package com.leesh.sender;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @EnableScheduling
 @SpringBootApplication
-public class RabbitMqApplication {
+public class SenderApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RabbitMqApplication.class, args);
+		SpringApplication.run(SenderApplication.class, args);
 	}
 
 }
