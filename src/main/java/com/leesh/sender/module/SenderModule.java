@@ -14,7 +14,8 @@ public class SenderModule {
 
     final RabbitTemplate rabbitTemplate;
 
-    //@Scheduled(fixedRate = 1000) //100ms마다 실행
+    //text 메세지 발송 sender
+    //@Scheduled(fixedRate = 1000) //1000ms마다 실행
     public void sender1(){
         // System.out.println("주기적으로 실행");
 
@@ -26,6 +27,7 @@ public class SenderModule {
         rabbitTemplate.convertAndSend("time","time-first",time);
     }
 
+    //DeptDto 객체 발송 sender
     @Scheduled(fixedRate = 1000) //100ms마다 실행
     public void sender2(){
         // System.out.println("주기적으로 실행");
